@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>King County Comic</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Welcome to<span class="logo_colour"> King County</span></a></h1>
+          <h2>Where nothing is as they say.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="cast.html">Characters</a></li>
+          <li><a href="background.html">Background</a></li>
+          <li><a href="crew.html">Crew</a></li>
+          <li><a href="#">Example Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down One</a></li>
+              <li><a href="#">Drop Down Two</a>
+                <ul>
+                  <li><a href="#">Sub Drop Down One</a></li>
+                  <li><a href="#">Sub Drop Down Two</a></li>
+                  <li><a href="#">Sub Drop Down Three</a></li>
+                  <li><a href="#">Sub Drop Down Four</a></li>
+                  <li><a href="#">Sub Drop Down Five</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down Three</a></li>
+              <li><a href="#">Drop Down Four</a></li>
+              <li><a href="#">Drop Down Five</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/1.jpg" width="600" height="300" alt="photo_one" /></li>
+        <li><img src="images/2.jpg" width="600" height="300" alt="photo_two" /></li>
+        <li><img src="images/3.jpg" width="600" height="300" alt="photo_three" /></li>
+        <li><img src="images/4.jpg" width="600" height="300" alt="photo_four" /></li>
+        <li><img src="images/5.jpg" width="600" height="300" alt="photo_five" /></li>
+        <li><img src="images/6.jpg" width="600" height="300" alt="photo_photo_dark" /></li>
+      </ul>
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h4>Issues 3 and 4 have been completed.</h4>
+          <h5>November 20th, 2016</h5>
+          <p>Issues 3 and 4 have been completed, but in weird comic time continuuum fashion, issues 1 and 2 remain unfinished.<br /><a href="#">Read more</a></p>
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>The world has changed, yet it also hasn't.</h1>
+        <p>King County is a crime noir comic set in Seattle in an undisclosed time in the future.   It follows Paul Bradford, a former corrupt cop turned PI who is in bed with seemingly every criminal element in the Universal District of Seattle.  While investigating the disappearance of a teenage girl, Bradford must bob and weave around a local triad he owes money to.  His pursuers are led by Billy Vu, an up and coming lieutenant at the street level of the triad.  King County begins with their story.</p>
+       <p>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2016 Razor Tongue Media</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
