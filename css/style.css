@@ -17,8 +17,12 @@ article, aside, figure, footer, header, hgroup, nav, section {
   display:block;
 }
 
+ul#nav.sf-menu a {
+  font-family: 'Permanent Marker', cursive;
+}
+
 body { 
-  font: normal .80em arial, sans-serif;
+  font: normal .80em;
   background: #222;
   color: #AAA;
 }
@@ -152,14 +156,17 @@ header {
 
 #logo_text a {
   font-size: 24px;
+  font-family: 'Anton', sans-serif;
 }
 
 span.logo_colour {
   font-size: 24px;
+  font-family: 'Anton', sans-serif;
 }
 
 #logo h1, #logo h2 { 
-  font: normal 320% 'News Cycle', arial, sans-serif;
+  font: normal 320%;
+  font-family: 'Anton', sans-serif;
   border-bottom: 0;
   text-transform: none;
   margin: 0;
