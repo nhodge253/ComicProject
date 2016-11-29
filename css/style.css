@@ -12,6 +12,8 @@ html {
   padding: 0;
 }
 
+
+
 /* tell the browser to render HTML 5 elements as block */
 article, aside, figure, footer, header, hgroup, nav, section { 
   display:block;
@@ -502,6 +504,33 @@ ul#nav ul li a {
 ul#nav ul li a:hover { 
   color: #222;
   margin-right: 2px;
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.sf-menu li:not(:first-child) {display: none;}
+  ul.sf-menu li.icon {
+    float: left;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.sf-menu.responsive {position: relative;}
+  ul.sf-menu.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.sf-menu.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.sf-menu.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
 
