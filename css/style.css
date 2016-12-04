@@ -1,7 +1,11 @@
 html {
   height: 100%;
 }
-
+@media (max-width: 600px) {
+  #map {
+    display: none;
+  }
+}
 
 
 body { 
@@ -13,6 +17,8 @@ body {
 article, aside, figure, footer, header, hgroup, nav, section { 
   display:block;
 }
+
+
 
 p { 
   padding: 0 0 20px 0;
@@ -160,4 +166,8 @@ p {
 
 .navbar-inverse .navbar-nav>.open>a:focus {
   background-color: maroon; 
+}
+
+.details {
+    display: none;
 }

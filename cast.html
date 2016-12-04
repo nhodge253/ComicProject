@@ -1,134 +1,212 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-  <title>King County Comic Plot Background</title>
-  <meta name="description" content="A site dedicated the comic series King County" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Anton|Permanent+Marker" rel="stylesheet">
-</head>
-<body>
- <div id="main">
-    <header>
-      <div id="logo">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>King County Comic</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Linden+Hill" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Permanent+Marker" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">King County Guidebook</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#description">Description</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#crew">Creators</a></li>
+              </ul>
+            </li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#links">Links</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">Welcome to<span class="logo_colour"> King County</span></a></h1>
           <h2>Where nothing is as they say.</h2>
         </div>
       </div>
-      <nav>
-        <ul class="sf-menu" id="nav">
-         <li><a href="index.html">Home</a></li>
-          <li class="selected"><a href="cast.html">Characters</a></li>
-           <li><a href="background.html">Background</a></li>
-          <li><a href="crew.html">Crew</a></li>
-          <li><a href="#">Example Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down One</a></li>
-              <li><a href="#">Drop Down Two</a>
-                <ul>
-                  <li><a href="#">Sub Drop Down One</a></li>
-                  <li><a href="#">Sub Drop Down Two</a></li>
-                  <li><a href="#">Sub Drop Down Three</a></li>
-                  <li><a href="#">Sub Drop Down Four</a></li>
-                  <li><a href="#">Sub Drop Down Five</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down Three</a></li>
-              <li><a href="#">Drop Down Four</a></li>
-              <li><a href="#">Drop Down Five</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact Us!</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content">
-      
-     <ul class="img-list">
-       <li>
-        <img src="Images/BillyVu.jpg" width="300" height="250" />
-        <span class="text-content"><span>Billy Vu</span></span>
-       </li>
        
-       <li>
-        <img src="Images/Bradford.jpg" width="250" height="250" />
-        <span class="text-content"><span>Paul Bradford</span></span>
-       </li>
-       
-       <li>
-        <img src="Images/Sammo.jpg" width="250" height="250" />
-        <span class="text-content"><span>Sammo Fatuesi</span></span>
-       </li>
-       
-       <li>
-        <img src="Images/KennyChen.jpg" width="250" height="250" style="margin:5px 5px 5px 5px" />
-        <span class="text-content"><span>Kenny Chen</span></span>
-       </li>
-       
-        <li>
-        <img src="Images/Twitty.jpg" width="250" height="250" />
-        <span class="text-content"><span>Lyla Twitty</span></span>
-       </li>
-       
-       <li>
-        <img src="Images/Zheng.jpg" width="250" height="250" />
-        <span class="text-content"><span>Zhu Zheng</span></span>
-       </li>
-       
-       <li>
-        <img src="Images/Han.jpg" width="250" height="250" />
-        <span class="text-content"><span>Han</span></span>
-       </li>
-       
-    
- 
-</ul>
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <h3>Latest News</h3>
-          <h4>Issues 3 and 4 have been completed.</h4>
-          <h5>November 20th, 2016</h5>
-          <p>Issues 3 and 4 have been completed, but in weird comic time continuuum fashion, issues 1 and 2 remain unfinished.<br /><a href="#">Read more</a></p>
-        </div>
-        <div class="sidebar">
-          <h3>Useful Links</h3>
-          <ul>
-            <li><a href="#">First Link</a></li>
-            <li><a href="#">Another Link</a></li>
-            <li><a href="#">And Another</a></li>
-            <li><a href="#">Last One</a></li>
-          </ul>
-        </div>
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+    <li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">History</a></li>
+    <li role="presentation"><a href="#crew" aria-controls="crew" role="tab" data-toggle="tab">Creators</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+
+
+
+</div>
+<div class="tab-content">
+
+
+      <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
+            http://getbootstrap.com/javascript/#tabs
+            You will need to add HTML structure to show each of the divs below
+            as a unique tab. -->
+
+        <div role="tabpanel" class="tab-pane fade in active" id="description">
+          <h2>About</h2>
+          <p>King County is a crime noir comic set in Seattle in an undisclosed time in the future. It follows Paul Bradford, a former corrupt cop turned PI who is in bed with seemingly every criminal element in the Universal District of Seattle. While investigating the disappearance of a teenage girl, Bradford must bob and weave around a local triad he owes money to. His pursuers are led by Billy Vu, an up and coming lieutenant at the street level of the triad. King County begins with their story.</p>
+
       </div>
-      <div class="content">
-        <h1>The world has changed, yet it also hasn't.</h1>
-        <p>King County takes place in an unkind future where the division between rich and poor has grown exponentially.  To compund things, the elites and uber talents have left Earth behind in pursuit of better lives on new worlds that have been developed to the point of comfort, leaving the choice of staying on Earth undesirable.</p>
-       <p>
+        <div role="tabpanel" class="tab-pane fade" id="history">
+          <h2>History</h2>
+          King County takes place in an unkind future where the division between rich and poor has grown exponentially. To compund things, the elites and uber talents have left Earth behind in pursuit of better lives on new worlds that have been developed to the point of comfort, leaving the choice of staying on Earth undesirable.</p>
+
+      </div>
+        <div role="tabpanel" class="tab-pane fade" id="crew">
+          <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
+                      enhance the HTML if you need to. -->
+       <h2>Creators</h2>
+         <p>
+           King County is written by Nate Hodge and inked, colored, and lettered by Ariel Iacci. </p>
+        </div>
+  </div>
+      </div>
+
+      
+      </div>
+       <div class="container">
+        <h1>Cast of Characters</h1>
+        <p class="castof">         
+        <p class="details">
+          <img class="pull-right img-thumbnail" src="Images/web_poster_rough.jpg" height=60% width=60% float=left>
+          Emerald City is formed by an eclectic cast of street level thugs, police, triad bosses, and everything in between. Here is a breakdown of some of the central players in the story.</p>
+        <p>
+         <a class="btn btn-primary btn-lg view-details" href="#" role="button">Learn more &raquo;</a>
+        </p>
       </div>
     </div>
-    <footer>
-      <p>Copyright &copy; 2016 Razor Tongue Media</a></p>
-    </footer>
-  </div>
-  <p>&nbsp;</p>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#images').kwicks({
-        max : 600,
-        spacing : 2
-      });
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
-</body>
+
+    <div class="container highlights">
+      <!-- Example row of columns -->
+      <div class="Paul">
+        <h2>Paul Bradford</h2>
+        <p class="teaser">Paul Bradford is a former Seattle cop turned private investigator.</p>
+        <p class="details"><img class="pull-right img-thumbnail" src="Images/Bradford.jpg" height=250px width=250px>Paul Bradford is a blablablablablablablablabla <br>
+        blablabblalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+        blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaallllllllllllllllllllllllll<br>
+        blallllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllal<br>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          
+        </p>
+        <p><a class="btn btn-default view-details" role="button">View details &raquo;</a></p>
+      </div>
+      <hr>
+      <div class="Billy">
+        <h2>Billy Vu</h2>
+        <p class="teaser">Billy Vu is the lieutenant of the White Lotus, a crime ring looking to work their way up the underworld food chain. </p>
+        <p class="details">
+         <img class="pull-right img-thumbnail" src="Images/BillyVu.jpg" height=250px width=250px>Billy Vu is a blablablablablablablablabla <br>
+        blablabblalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+        blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaallllllllllllllllllllllllll<br>
+        blallllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllal<br>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem Ipsum.publishing. 
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p><a class="btn btn-default view-details" role="button">View details &raquo;</a></p>
+      </div>
+      <hr>
+      <div class="Sammo">
+        <h2>Sammo Fatuesi</h2>
+        <p class="teaser">Sammo Fatuesi is another lieutenant in the White Lotus and one of Billy's closest friends.</p>
+         <p class="details">
+         <img class="pull-right img-thumbnail" src="Images/Sammo.jpg" height=250px width=250px>Sammo Fatuesi is a blablablablablablablablabla <br>
+        blablabblalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+        blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaallllllllllllllllllllllllll<br>
+        blallllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllal<br>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem Ipsum.publishing. 
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p><a class="btn btn-default view-details" role="button">View details &raquo;</a></p>
+      </div>
+
+      <div id="links">
+        <h2>Links</h2>
+        <p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
+        <ul class="links-list">
+          <li><a href="http://www.nps.gov/mora/index.htm">Mt. Rainier National Parks Page</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/Mount_Rainier">Mt. Rainier Wikipedia Page</a></li>
+          <li><a href="http://visitrainier.com/">Mt. Rainier Tourism Page</a></li>
+          <li><a href="https://content.lib.washington.edu/warnerweb/essay.html">John Muir's Ascent of Mt. Rainier</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Made by Nate Hodge in 2016. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
+      </footer>
+    </div> <!-- /container -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+        <script src="js/main.js"></script>
+
+
+    </body>
 </html>
