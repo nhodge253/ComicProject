@@ -1,18 +1,58 @@
 html {
   height: 100%;
 }
-@media (max-width: 600px) {
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+
+/* mouse over link */
+a:hover {
+    color: #796513;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+@media (max-width: 768px) {
   #map {
     display: none;
   }
 }
 
+@media (max-width: 320px) {
+  .tab-content {
+    text-align: center;
+    margin-right: 13px;
+  }
+}  
 
+
+@media (max-width: 480px) {
+  .tab-content {
+    text-align: center;
+    margin-right: 13px;
+  }
+ }
 body { 
   font: normal .80em;
   background: #222;
   color: #AAA;
 }
+
+@media (min-width: 1024px) {
+  .tab-content {
+    font-size: 1.35em;
+    margin-right: 13px;
+  }
+ }
 
 article, aside, figure, footer, header, hgroup, nav, section { 
   display:block;
@@ -86,6 +126,7 @@ h1 a:hover, span.logo_colour:hover {
   background-color: gray;
   color: maroon;
   border-color: maroon;
+  font-family: 'Linden Hill', serif;
 }
 
 .navbar-inverse .navbar-nav .active a {
@@ -104,6 +145,7 @@ h1 a:hover, span.logo_colour:hover {
 .nav a {
   color: maroon;
 }
+
 
 .container-fluid {
   background-color: gray;
@@ -130,10 +172,27 @@ p {
   margin-left: 25%;
 }
 
+@media (max-width: 320px) {
+  #quote {
+    text-align: center;
+    margin-left: 5px;
+    color: pink;
+  }
+}  
+
+@media (min-width: 480px) {
+  #quote {
+    text-align: center;
+    margin-left: 5px;
+    color: rgba(191,188,188,0.4);
+    font-weight:bold;
+  }
+}  
+
 #author {
   font-family: 'Linden Hill', serif;
   font-size: large;
-  margin-left: 25%;
+  margin-left: 45%;
 }
 
 .tab-content {
@@ -158,6 +217,7 @@ p {
 
 #links {
   padding-left: 7px;
+  
 }
 
  .navbar-inverse .navbar-nav>li>a {
