@@ -1,0 +1,243 @@
+html {
+  height: 100%;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+
+/* mouse over link */
+a:hover {
+    color: #796513;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+@media (max-width: 768px) {
+  #map {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .tab-content {
+    text-align: center;
+    margin-right: 13px;
+  }
+}  
+
+
+@media (max-width: 480px) {
+  .tab-content {
+    text-align: center;
+    margin-right: 13px;
+  }
+ }
+body { 
+  font: normal .80em;
+  background: #222;
+  color: #AAA;
+}
+
+@media (min-width: 1024px) {
+  .tab-content {
+    font-size: 1.35em;
+    margin-right: 13px;
+  }
+ }
+
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+
+
+p { 
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h1, h2, h3 { 
+  font: normal 140%;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #FFF;
+}
+
+h2 { 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #FFF;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 { 
+  color: #FFF;
+  padding: 0 0 5px 0;
+  font: normal 150% ;
+}
+
+h5, h6 { 
+  color: #BBB;
+  font: italic 95% arial, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+span.logo_colour {
+  color: grey;
+}
+
+h1 a {
+  color: white;
+}
+
+h1 a:hover, span.logo_colour:hover {
+  color: black;
+}
+
+.jumbotron {
+  background-color: maroon;
+}
+
+.navbar {
+  background-color: gray;
+  color: maroon;
+  border-color: maroon;
+  font-family: 'Rubik Mono One', sans-serif;
+  width: 100%;
+}
+
+
+.navbar-inverse .navbar-nav .active a {
+    background-color: grey;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+    color: maroon;
+    background-color: white;
+}
+
+.navbar .nav>li>a {
+    color: black;
+}
+
+.nav a {
+  color: maroon;
+}
+
+
+.container-fluid {
+  background-color: gray;
+}
+#home {
+  text-align: center;
+  font-family: 'Linden Hill', serif;
+}
+h2 {
+  margin-left: 10px;
+}
+
+p {
+  margin-left: 13px;
+}
+.carousel-inner img{
+       width:100%;
+      max-height: 500px;
+     }
+
+#quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: x-large;
+  margin-left: 25%;
+}
+
+@media (max-width: 320px) {
+  #quote {
+    text-align: center;
+    margin-left: 5px;
+    color: pink;
+  }
+}  
+
+@media (min-width: 480px) {
+  #quote {
+    text-align: center;
+    margin-left: 5px;
+    color: rgba(191,188,188,0.4);
+    font-weight:bold;
+  }
+}  
+
+#author {
+  font-family: 'Linden Hill', serif;
+  font-size: large;
+  margin-left: 45%;
+}
+
+.tab-content {
+  padding-left: 7px;
+}
+#stats dl{
+  padding-top: 10px;
+  margin:3px;
+}
+
+#stats dd {
+  font-family: 'Linden Hill', serif;
+  margin-left: 13px;
+  padding:10px;
+}
+
+#map {
+  padding-left: 7px;
+}
+
+#map-container { height:300px; }
+
+#links {
+  padding-left: 7px;
+  
+}
+
+ .navbar-inverse .navbar-nav>li>a {
+   background-color: grey;
+}
+
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: maroon; 
+}
+
+.details {
+    display: none;
+}
+
+li#cast a:hover {
+  color: orange;
+  text-emphasis: bold;
+}
+
+
+
